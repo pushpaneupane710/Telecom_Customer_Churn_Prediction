@@ -1,8 +1,8 @@
 # **Telecom Customer Churn Prediction**
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white) ![Seaborn](https://img.shields.io/badge/Seaborn-444876?style=for-the-badge&logo=seaborn&logoColor=white) ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white) ![Joblib](https://img.shields.io/badge/Joblib-00A98F?style=for-the-badge) ![Deployed on Streamlit](https://img.shields.io/badge/Deployed-Streamlit-FF4B4B?style=for-the-badge) 
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white) ![Seaborn](https://img.shields.io/badge/Seaborn-444876?style=for-the-badge&logo=seaborn&logoColor=white) ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white) ![Joblib](https://img.shields.io/badge/Joblib-00A98F?style=for-the-badge) ![Deployed on Streamlit](https://img.shields.io/badge/Deployed-Streamlit-FF4B4B?style=for-the-badge) 
 
-**Telecom Customer Churn Prediction App live at:**​  [![Live App](https://img.shields.io/badge/Live%20App-Click%20Here-green?style=for-the-badge)](https://telecomcustomerchurnprediction-f8ntnyptytjxpbxsdlb8qu.streamlit.app/) 
+**Telecom Customer Churn Prediction App live at:**  [![Live App](https://img.shields.io/badge/Live%20App-Click%20Here-green?style=for-the-badge)](https://telecomcustomerchurnprediction-f8ntnyptytjxpbxsdlb8qu.streamlit.app/) 
 
 An end-to-end **Data Analytics + Machine Learning project** that analyzes telecom customer behavior and predicts churn using a deployed **Streamlit web application**.
 
@@ -66,19 +66,39 @@ The analysis follows a structured approach:
 
 ---
 
-## Business Insights
+## Business Insights and Visualizations
 
-1.  Senior citizens are more likely to churn. Indicates need for segment-specific strategies
+#### **Telcome customer churn rate:**
+
+![Churn Distribution](graphs/churn_distribution.png)
+
+Data is highly imbalanced 73:26
+
+  
+
+  
+
+### Senior citizens are more likely to churn.
+
+  
+
+  
+
+### People with no partners are more likely to churn
+
+1.  Mothly contracts are more likely to churn because they are free customers
     
-2.  People with no partners are more likely to churn
+
+  
+
+1.  People who pay via electronic check are more likely to churn
     
-3.  Mothly contracts are more likely to churn because they are free customers
+
+  
+
+1.  Monthly charges and total charges are positively correlated
     
-4.  People who pay via electronic check are more likely to churn
-    
-5.  Monthly charges and total charges are positively correlated
-    
-6.  Churn is high when monthly charges are high
+2.  Churn is high when monthly charges are high
     
 
 ---
