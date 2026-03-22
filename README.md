@@ -66,7 +66,7 @@ The analysis follows a structured approach:
 
 ---
 
-## Business Insights and Visualizations
+## Business Insights and Visualizations:
 
 #### **Telcome customer churn rate:**
 
@@ -76,7 +76,7 @@ Data is highly imbalanced 73:26
 
   
 
-### People with no partners are more likely to churn
+---
 
 #### Mothly contracts are more likely to churn because they are free customers
 
@@ -84,19 +84,19 @@ Churn is high when monthly charges are high
 
 ![Monthly Charges](graphs/Churn_by_Monthly_Charges.png)
 
-  
+---
 
 #### Churn when Total charges are high
 
 ![Monthly Charges](graphs/Churn_by_Total_Charges.png)
 
-  
+---
 
 #### Monthly charges and total charges are positively correlated
 
 ![Correlation](graphs/Correlation_between_features_and_Churn.png)
 
-  
+---
 
 #### People who pay via electronic check are more likely to churn
 
