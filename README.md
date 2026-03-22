@@ -76,30 +76,35 @@ Data is highly imbalanced 73:26
 
   
 
-  
-
-### Senior citizens are more likely to churn.
-
-  
-
-  
-
 ### People with no partners are more likely to churn
 
-1.  Mothly contracts are more likely to churn because they are free customers
-    
+#### Mothly contracts are more likely to churn because they are free customers
+
+Churn is high when monthly charges are high
+
+![Monthly Charges](graphs/Churn_by_Monthly_Charges.png)
 
   
 
-1.  People who pay via electronic check are more likely to churn
-    
+#### Churn when Total charges are high
+
+![Monthly Charges](graphs/Churn_by_Total_Charges.png)
 
   
 
-1.  Monthly charges and total charges are positively correlated
-    
-2.  Churn is high when monthly charges are high
-    
+#### Monthly charges and total charges are positively correlated
+
+![Correlation](graphs/Correlation_between_features_and_Churn.png)
+
+  
+
+#### People who pay via electronic check are more likely to churn
+
+![Payment Method](graphs/payment_method.png)
+
+  
+
+  
 
 ---
 
