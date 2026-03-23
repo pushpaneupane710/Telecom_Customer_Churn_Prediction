@@ -103,7 +103,7 @@ Study how categories break down between churned and non-churned groups.
   <tr>
     <td><img src="graphs/Churn_by_Monthly_Charges.png" width="100"></td>
     <td><img src="graphs/Churn_by_Total_Charges.png" width="100"></td>
-    <td><img src="Correlation_Between_features_and_Churn.png" width="100"></td>
+    <td><img src="Correlation_between_features_and_Churn.png" width="100"></td>
   </tr>
   <tr>
     <td><img src="graphs/PaperlessBilling_churn_plot.png" width="100"></td>
@@ -130,11 +130,7 @@ However if we combine the insights of 3 parameters i.e. Tenure, Monthly Charges 
 
 7. **Correlation between monthly and total charges:** Both are positively correlated. 
 
-8. **Coorelation between features and target variable (churn):** *HIGH** Churn seen in case of  **Month to month contracts**, **No online security**, **No Tech support**, **First year of subscription** and **Fibre Optics Internet**
-
-**LOW** Churn is seens in case of **Long term contracts**, **Subscriptions without internet service** and **The customers engaged for 5+ years**
-
-Factors like **Gender**, **Availability of PhoneService** and **# of multiple lines** have alomost **NO** impact on Churn.
+8. **Coorelation between features and target variable (churn):** *HIGH** Churn seen in case of  **Month to month contracts**, **No online security**, **No Tech support**, **First year of subscription** and **Fibre Optics Internet**. **LOW** Churn is seens in case of **Long term contracts**, **Subscriptions without internet service** and **The customers engaged for 5+ years**. Factors like **Gender**, **Availability of PhoneService** and **# of multiple lines** have alomost **NO** impact on Churn.
 
 ---
 
