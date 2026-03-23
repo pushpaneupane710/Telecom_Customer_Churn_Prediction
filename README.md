@@ -6,36 +6,13 @@
 
 An end-to-end **Data Analytics + Machine Learning project** that analyzes telecom customer behavior and predicts churn using a deployed **Streamlit web application**.
 
-## Problem Statement:
+### Problem Statement:
 
 Telecom companies face significant revenue loss due to customer churn. The problem is to analyze customer data to understand the patterns and factors leading to churn, and to build a machine learning model that can accurately predict which customers are likely to leave. This enables businesses to take proactive actions to improve customer retention.
 
 Churn: The rate at which customers stop doing business with the company, often measures as the percentage of lost customers or subscribers over a specific period.
 
 **Task:** Why customers are churning out? What are the characteristics of those customers who are churners? How to retain them? Predict who will churn in future?
-
-## Data Understanding:
-
-The dataset contains **7032 customer records**.
-
-#### Key Features:
-
--   `gender` – Customer gender
-    
--   `SeniorCitizen` – Whether customer is senior
-    
--   `tenure` – Number of months with company
-    
--   `Contract` – Contract type
-    
--   `PaymentMethod` – Payment type
-    
--   `MonthlyCharges` – Monthly bill
-    
--   `TotalCharges` – Total amount paid
-    
--   `Churn` – Target variable (Yes/No)
-    
 
 ---
 
@@ -62,23 +39,85 @@ The analysis follows a structured approach:
 -   An interactive Streamlit web application for predicting churn probability.
     
 -   A deployed machine learning application.
+  
+--- 
+
+### Data Understanding:
+
+The dataset contains **7032 customer records**.
+
+#### Key Features:
+
+-   `gender` – Customer gender
+    
+-   `SeniorCitizen` – Whether customer is senior
+    
+-   `tenure` – Number of months with company
+    
+-   `Contract` – Contract type
+    
+-   `PaymentMethod` – Payment type
+    
+-   `MonthlyCharges` – Monthly bill
+    
+-   `TotalCharges` – Total amount paid
+    
+-   `Churn` – Target variable (Yes/No)
     
 
----
 
-## Business Insights and Visualizations:
-
-#### **Telcome customer churn rate:**
+#### Telcome customer churn rate:
 
 ![Churn Distribution](graphs/churn_distribution.png)
 
-Data is highly imbalanced 73:26
+-   Data is highly imbalanced, ratio is almost 73:26.
+-   73.5% of customers are active and rest are churned.
+-   Therefore, we need to analyse the data with other features while taking the target value (churn) separately to get some insights.
 
-  
+
+#### Missing Data: 
+
+![Percentage Missing Data](graphs/percentage_of_Missing_values.png)
+
+11/7043*100 = 0.156% of missing values in TotalCharges column. Since this is a very small percentage, we can choose to drop these rows without significantly affecting our analysis.
+
+
+
+#### Initial intuition from the data:
+Initially, there were no null values. But, we understood that TotalCharges was not in the correct format to analyse, so we converted into numeric data type, then we got around 0.156% of null values
 
 ---
+### Univariate Analysis:
 
-#### Mothly contracts are more likely to churn because they are free customers
+analysis of important features with repect to target variable Churn:
+
+<table>
+  <tr>
+    <td><img src="graphs/SeniorCitizen_churn_plot.png" width="100"></td>
+    <td><img src="graphs/tenure_group_churn_plot.png" width="100"></td>
+    <td><img src="graphs/gender_churn_plot.png" width="100"></td>
+  </tr>
+  <tr>
+    <td><img src="graphs/PaymentMethod_churn_plot.png" width="100"></td>
+    <td><img src="graphs/PhoneService_churn_plot.png" width="100"></td>
+    <td><img src="graphs/TechSupport_churn_plot.png" width="100"></td>
+  </tr>
+  <tr>
+    <td><img src="graphs/TechSupport_churn_plot.png" width="100"></td>
+    <td><img src="graphs/OnlineBackup_churn_plot.png" width="100"></td>
+    <td><img src="graphs/OnlineSecurity_churn_plot.png" width="100"></td>
+  </tr>
+  <tr>
+    <td><img src="graphs/PaperlessBilling_churn_plot.png" width="100"></td>
+    <td><img src="graphs/InternetService_churn_plot.png" width="100"></td>
+    <td><img src="graphs/StreamingTV_churn_plot.png" width="100"></td>
+  </tr>
+
+</table>
+
+
+
+#### Monthly contracts are more likely to churn because they are free customers
 
 Churn is high when monthly charges are high
 
@@ -94,17 +133,13 @@ Churn is high when monthly charges are high
 
 #### Monthly charges and total charges are positively correlated
 
-![Correlation](graphs/Correlation_between_features_and_Churn.png)
+![Correlation](graphs/Correlation_between_Monthly_and_Total_Charges.png)
 
 ---
 
 #### People who pay via electronic check are more likely to churn
 
 ![Payment Method](graphs/payment_method.png)
-
-  
-
-  
 
 ---
 
