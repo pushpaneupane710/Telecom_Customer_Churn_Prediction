@@ -103,7 +103,7 @@ Study how categories break down between churned and non-churned groups.
   <tr>
     <td><img src="graphs/Churn_by_Monthly_Charges.png" width="100"></td>
     <td><img src="graphs/Churn_by_Total_Charges.png" width="100"></td>
-    <td><img src="Correlation_Between_Monthly_and_Total_Charges.png" width="100"></td>
+    <td><img src="Correlation_Between_features_and_Churn.png" width="100"></td>
   </tr>
   <tr>
     <td><img src="graphs/PaperlessBilling_churn_plot.png" width="100"></td>
