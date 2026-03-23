@@ -91,24 +91,24 @@ Study how categories break down between churned and non-churned groups.
 
 <table>
   <tr>
-    <td><img src="graphs/SeniorCitizen_churn_plot.png" width="100"></td>
-    <td><img src="graphs/tenure_group_churn_plot.png" width="100"></td>
-    <td><img src="graphs/gender_churn_plot.png" width="100"></td>
+    <td><img src="graphs/SeniorCitizen_churn_plot.png" width="150"></td>
+    <td><img src="graphs/tenure_group_churn_plot.png" width="150"></td>
+    <td><img src="graphs/gender_churn_plot.png" width="150"></td>
   </tr>
   <tr>
-    <td><img src="graphs/payment_method.png" width="100"></td>
-    <td><img src="graphs/PhoneService_churn_plot.png" width="100"></td>
-    <td><img src="graphs/TechSupport_churn_plot.png" width="100"></td>
+    <td><img src="graphs/payment_method.png" width="150"></td>
+    <td><img src="graphs/PhoneService_churn_plot.png" width="150"></td>
+    <td><img src="graphs/TechSupport_churn_plot.png" width="150"></td>
   </tr>
   <tr>
-    <td><img src="graphs/Churn_by_Monthly_Charges.png" width="100"></td>
-    <td><img src="graphs/Churn_by_Total_Charges.png" width="100"></td>
-    <td><img src="Correlation_between_features_and_Churn.png" width="100"></td>
+    <td><img src="graphs/Churn_by_Monthly_Charges.png" width="150"></td>
+    <td><img src="graphs/Churn_by_Total_Charges.png" width="150"></td>
+    <td><img src="graphs/Correlation_between_features_and_Churn.png" width="150"></td>
   </tr>
   <tr>
-    <td><img src="graphs/PaperlessBilling_churn_plot.png" width="100"></td>
-    <td><img src="graphs/InternetService_churn_plot.png" width="100"></td>
-    <td><img src="graphs/StreamingTV_churn_plot.png" width="100"></td>
+    <td><img src="graphs/PaperlessBilling_churn_plot.png" width="150"></td>
+    <td><img src="graphs/InternetService_churn_plot.png" width="150"></td>
+    <td><img src="graphs/StreamingTV_churn_plot.png" width="150"></td>
   </tr>
 
 </table>
