@@ -77,10 +77,9 @@ The dataset contains **7032 customer records**.
 
 #### Missing Data: 
 
-![Percentage Missing Data](graphs/percentage_of_Missing_values.png)
+![Missing Data](graphs/percentage_of_missing_values.png)
 
 11/7043*100 = 0.156% of missing values in TotalCharges column. Since this is a very small percentage, we can choose to drop these rows without significantly affecting our analysis.
-
 
 
 #### Initial intuition from the data:
