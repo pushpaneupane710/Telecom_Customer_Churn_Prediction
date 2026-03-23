@@ -124,13 +124,112 @@ Study how categories break down between churned and non-churned groups.
 
 5. **Churn by monthly charges:** Churn is high when monthly charges are high and vice versa. Monthly contracts are more likely to churn because they are free customers
 
-6. **Churn by total charges:** **Surprising insight ** as higher Churn at lower Total Charges
+6. **Churn by total charges:** **Surprising insight** as higher Churn at lower Total Charges
 
 However if we combine the insights of 3 parameters i.e. Tenure, Monthly Charges & Total Charges then the picture is bit clear :- Higher Monthly Charge at lower tenure results into lower Total Charge. Hence, all these 3 factors viz **Higher Monthly Charge**,  **Lower tenure** and **Lower Total Charge** are linkd to **High Churn**.
 
 7. **Correlation between monthly and total charges:** Both are positively correlated. 
 
-8. **Coorelation between features and target variable (churn):** *HIGH** Churn seen in case of  **Month to month contracts**, **No online security**, **No Tech support**, **First year of subscription** and **Fibre Optics Internet**. **LOW** Churn is seens in case of **Long term contracts**, **Subscriptions without internet service** and **The customers engaged for 5+ years**. Factors like **Gender**, **Availability of PhoneService** and **# of multiple lines** have alomost **NO** impact on Churn.
+8. **Coorelation between features and target variable (churn):** **HIGH** Churn seen in case of  **Month to month contracts**, **No online security**, **No Tech support**, **First year of subscription** and **Fibre Optics Internet**. **LOW** Churn is seens in case of **Long term contracts**, **Subscriptions without internet service** and **The customers engaged for 5+ years**. Factors like **Gender**, **Availability of PhoneService** and **# of multiple lines** have alomost **NO** impact on Churn.
+
+---
+### Bivariate Analysis:
+Study and identify relationships, patterns, and key factors affecting the target variable. 
+
+First, we divide the data into churned and non churned customers. 
+Churned customers= 1869
+Non-churned customers= 5163
+Total customers in a telecom company= 7032
+
+Second, we identify key-drivers of churned customers. Graphs are provided below for understanding of key drivers of churned customers.
+
+1. **Distribution of Gender for Churned customers**
+2. **Distribution of payment method for churned customers**
+3. **Distribution of Contract for churned customers**
+4. **Distribution of Tech Support for churned customers**
+5. **Distribution of Senior Citizen for churned customers**
+
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+
+### 1. Distribution of Gender for Churned Customers
+
+- Churn distribution is almost equal across genders  
+- No strong dependency between gender and churn  
+- Gender is not a key factor in predicting churn  
+
+    </td>
+    <td width="50%" valign="top">
+      <img src="graphs/Distribution_of_Gender_for_Churned_Customers.png" width="90%">
+    </td>
+  </tr>
+
+  <tr>
+    <td width="50%" valign="top">
+
+### 2. Distribution of Payment Method for Churned Customers
+
+- Customers using electronic check show higher churn  
+- Auto-payment methods have lower churn  
+- Payment behavior plays an important role  
+
+    </td>
+    <td width="50%" valign="top">
+      <img src="graphs/Distribution_of_PaymentMethod_for_Churned_Customers.png" width="90%">
+    </td>
+  </tr>
+
+  <tr>
+    <td width="50%" valign="top">
+
+### 3. Distribution of Contract for Churned Customers
+
+- Month-to-month contracts have the highest churn  
+- Long-term contracts (1–2 years) reduce churn  
+- Contract type is a strong predictor  
+
+    </td>
+    <td width="50%" valign="top">
+      <img src="graphs/Distribution_of_Contract_for_Churned_Customers.png" width="90%">
+    </td>
+  </tr>
+
+  <tr>
+    <td width="50%" valign="top">
+
+### 4. Distribution of Tech Support for Churned Customers
+
+- Customers without tech support churn more  
+- Tech support improves customer retention  
+- Service quality is important for loyalty  
+
+    </td>
+    <td width="50%" valign="top">
+      <img src="graphs/Distribution_of_TechSupport_for_Churned_Customers.png" width="90%">
+    </td>
+  </tr>
+
+  <tr>
+    <td width="50%" valign="top">
+
+### 5. Distribution of Senior Citizen for Churned Customers
+
+- Senior citizens have slightly higher churn  
+- Indicates need for targeted services  
+- Age group impacts retention behavior  
+
+    </td>
+    <td width="50%" valign="top">
+      <img src="graphs/Distribution_of_SeniorCitizen_for_Churned_Customers.png" width="90%">
+    </td>
+  </tr>
+
+</table>
+
+
+
 
 ---
 
