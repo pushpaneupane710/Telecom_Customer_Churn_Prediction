@@ -87,8 +87,7 @@ Initially, there were no null values. But, we understood that TotalCharges was n
 
 ---
 ### Univariate Analysis:
-
-analysis of important features with repect to target variable Churn:
+Study how categories break down between churned and non-churned groups.
 
 <table>
   <tr>
@@ -97,14 +96,14 @@ analysis of important features with repect to target variable Churn:
     <td><img src="graphs/gender_churn_plot.png" width="100"></td>
   </tr>
   <tr>
-    <td><img src="graphs/PaymentMethod_churn_plot.png" width="100"></td>
+    <td><img src="graphs/payment_method.png" width="100"></td>
     <td><img src="graphs/PhoneService_churn_plot.png" width="100"></td>
     <td><img src="graphs/TechSupport_churn_plot.png" width="100"></td>
   </tr>
   <tr>
-    <td><img src="graphs/TechSupport_churn_plot.png" width="100"></td>
-    <td><img src="graphs/OnlineBackup_churn_plot.png" width="100"></td>
-    <td><img src="graphs/OnlineSecurity_churn_plot.png" width="100"></td>
+    <td><img src="graphs/Churn_by_Monthly_Charges.png" width="100"></td>
+    <td><img src="graphs/Churn_by_Total_Charges.png" width="100"></td>
+    <td><img src="Correlation_Between_Monthly_and_Total_Charges.png" width="100"></td>
   </tr>
   <tr>
     <td><img src="graphs/PaperlessBilling_churn_plot.png" width="100"></td>
@@ -114,31 +113,28 @@ analysis of important features with repect to target variable Churn:
 
 </table>
 
+**Findings:**
+1. **SeniorCitizen:** higher percentage of senior citizens (those aged 65 and above) are churning compared to non-senior citizens. This suggests that age may be a factor in customer churn, and the company may want to consider targeted retention strategies for this demographic. Senior citizens are more likely to churn.
+   
+2. **Tenure group:** 41.46% of customers from 1-12 months (shorter tenure group) are churning. Company may need to focus on improving the onboarding experience and providing incentives for new customers to stay longer.
 
+3. **Gender:** Distribution of churn appears similar between male and female.
 
-#### Monthly contracts are more likely to churn because they are free customers
+4. **Payment method:** Customers using electronic check exhibit a significantly higher churn rate (~45%) compared to customers using automatic payment methods (~15–17%). This indicates that customers who are not enrolled in automated payments are more likely to discontinue the service. The company should encourage customers to switch to automatic payment methods by offering incentives such as discounts, cashback.
 
-Churn is high when monthly charges are high
+5. **Churn by monthly charges:** Churn is high when monthly charges are high and vice versa. Monthly contracts are more likely to churn because they are free customers
 
-![Monthly Charges](graphs/Churn_by_Monthly_Charges.png)
+6. **Churn by total charges:** **Surprising insight ** as higher Churn at lower Total Charges
 
----
+However if we combine the insights of 3 parameters i.e. Tenure, Monthly Charges & Total Charges then the picture is bit clear :- Higher Monthly Charge at lower tenure results into lower Total Charge. Hence, all these 3 factors viz **Higher Monthly Charge**,  **Lower tenure** and **Lower Total Charge** are linkd to **High Churn**.
 
-#### Churn when Total charges are high
+7. **Correlation between monthly and total charges:** Both are positively correlated. 
 
-![Monthly Charges](graphs/Churn_by_Total_Charges.png)
+8. **Coorelation between features and target variable (churn):** *HIGH** Churn seen in case of  **Month to month contracts**, **No online security**, **No Tech support**, **First year of subscription** and **Fibre Optics Internet**
 
----
+**LOW** Churn is seens in case of **Long term contracts**, **Subscriptions without internet service** and **The customers engaged for 5+ years**
 
-#### Monthly charges and total charges are positively correlated
-
-![Correlation](graphs/Correlation_between_Monthly_and_Total_Charges.png)
-
----
-
-#### People who pay via electronic check are more likely to churn
-
-![Payment Method](graphs/payment_method.png)
+Factors like **Gender**, **Availability of PhoneService** and **# of multiple lines** have alomost **NO** impact on Churn.
 
 ---
 
